@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.home</groupId>
+  <artifactId>ress-home</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.4.0</version>
+  </parent>
+    
+  <dependencies>
+	<!-- Pour avoir une application Springboot -->	
+		<dependency>
+	   		<groupId>org.springframework.boot</groupId>
+	   		<artifactId>spring-boot-starter-web</artifactId>
+		</dependency> 		
+ 
+ 	<!-- Pour Lancer un Constructor -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId> 
+		</dependency>
+ 
+   	<!-- Pour Swagger -->
+   		<dependency>
+   			<groupId>io.springfox</groupId>
+   			<artifactId>springfox-boot-starter</artifactId>
+   			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>3.0.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger-ui</artifactId>
+		    <version>3.0.0</version>
+		</dependency>  
+ 	<!-- Fin Swagger  -->
+ 	
+ 	<!-- Database 
+ 		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+     	</dependency>
+ 	-->
+ 	
+ </dependencies>
+        
+</project>

@@ -1,0 +1,33 @@
+# Spring
+ spring:
+  mvc.pathmatch.matching-strategy: ANT_PATH_MATCHER 
+
+# Actuator
+ management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,prometheus,healthy"
+  health:
+    readinessState.enabled: true
+    livenessState.enabled: true
+    db.enabled: true
+    jms.enabled: false
+  info:
+    env.enabled: true
+    java.enabled: true
+  endpoint.health:
+    probes.enabled: true
+    show-details: always
+    status:
+      http-mapping:
+        down: 500
+        warning: 500
+        out_of_service: 503
+      order: down,out-of-service,warning,unknown,up
+
+#Server 
+ server:
+  port: 8080
+  servlet:
+    context-path: /ress-home
