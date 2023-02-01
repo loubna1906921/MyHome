@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import fr.home.repository.Ingredient;
+import fr.home.entity.Ingredient;
 import fr.home.repository.IngredientRepository;
 
 @Service
